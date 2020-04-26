@@ -1,0 +1,16 @@
+header {
+    background-color: green;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-bottom: 7px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: green;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}

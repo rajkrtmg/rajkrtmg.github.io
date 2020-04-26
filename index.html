@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Covid update</title>
+    <script src="ex1.js"> 
+    </script>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Ubuntu', sans-serif !important;
+        }
+    </style>
+<body>
+    <header> 
+        <h1>COVID-19 CORONAVIRUS REPORT</h1>
+        <p style="text-align: right;"> Updated: April 25th 8:09PM</p> 
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 style="background-color:Tomato; text-align:center;""> GLOBAL COVID19 Report</h3>
+                <p id="tc">Total Cases Confirmed: 2845859  </p>
+                <p id="dc">Total Deaths Confirmed: 197846</p>
+                <p id="rc"> Total Recovered Cases: 811687</p> 
+                <p id="TDG"></p>
+                <p id="TRG"></p>
+                <button onclick="globalPercentage()" class="btn btn-success">Find Percentage</button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3 style="background-color:Tomato; text-align:center;""> NEPAL COVID19 Report</h3>
+                <p>Total Cases Confirmed: 49  </p>
+                <p>Total Deaths Confirmed: 0</p>
+                <p>Total Recovered Cases: 12</p> 
+                <p id="TDN"></p>
+                <p id="TRN"></p>
+                <button onclick="nepalPercentage()" class="btn btn-success">Find Percentage</button>
+
+            </div>
+
+            <div class="col-sm-4">
+                <h3 style="background-color:Tomato; text-align:center;""> Percentage Calculator</h3>
+                <label for="num1">Enter total number of cases:</label>
+                 <input type="text" id="num1" name="num1" size="15"> 
+                 <label for="num2">Enter total number of deaths:</label>
+                 <input type="text" id="num2" name="num2" size="15"> 
+                 <label for="num3">Enter total number of recovered cases:</label>
+                 <input type="text" id="num3" name="num3" size="10"> 
+                 <p id="TD"></p>
+                 <p id="TR"></p>
+                 <button onclick="percentageCalc()" class="btn btn-success">Calculate</button>
+            </div>
+        </div>  
+    </div>
+
+</body>
+
+<footer>
+    <h3> Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers.info</a></a></h3>
+</footer>
+
+</html>
