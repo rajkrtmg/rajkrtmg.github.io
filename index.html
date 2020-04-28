@@ -17,6 +17,8 @@
 }
 </style>
 <body>
+    <p id="time"></p>
+
     <div class="container-fluid">
         <center>
             <p> <b>
@@ -32,7 +34,7 @@
         </center>
 
     </div>
-</body>
+</body onload="timer()">
 </html>
 
 <script>
@@ -45,5 +47,16 @@
         } else{
             document.getElementById("message").innerHTML="Log In Failure";
         }
+    }
+
+    function timer(){
+        var d=new Date();
+
+        var h=d.getHours();
+        var m=d.getMinutes()
+        var s=d.getSeconds();
+
+        document.getElementById("time").innerHTML=h +":"+m+":"+s;
+        setTimeout(timer,500);
     }
 </script>
