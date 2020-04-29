@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    
+        function AssignValues() {
+            localStorage.setItem("text1", document.form1.text1.value);
+            localStorage.setItem("text2", document.form1.text2.value);
+            localStorage.setItem("text3", document.form1.text3.value);
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <input type="text" name="text1" placeholder="Enter text...">
+        <br>
+        <input type="text" name="text2" placeholder="Enter text...">
+        <br>
+        <input type="text" name="text3" placeholder="Enter text...">
+        <br>
+        <input type="button" value="Assign values" onClick="AssignValues()">
+
+</form>
+</html>

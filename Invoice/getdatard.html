@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Local storage</title>
+    <script type="text/javascript">
+    
+        function Value1() {
+            alert("Value 1 is " + localStorage.getItem("text1"));
+        }
+
+        function Value2() {
+            alert("Value 2 is " + localStorage.getItem("text2"));
+        }
+
+        function Value3() {
+            alert("Value 3 is " + localStorage.getItem("text3"));
+        }
+
+        function ShowLength() {
+            alert("No of items in local storage is " + localStorage.length);
+        }
+
+        function ClearStorage() {
+            localStorage.clear();
+            alert("No of items in local storage is " + localStorage.length);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="javascript:window.print()">Print</button>
+        <input type="button" value="Show value 1" onClick="Value1()">
+        <br>
+        <input type="button" value="Show value 2" onClick="Value2()">
+        <br>
+        <input type="button" value="Show value 3" onClick="Value3()">
+        <br>
+        <input type="button" value="Show length" onClick="ShowLength()">
+        <br>
+        <input type="button" value="Clear storage" onClick="ClearStorage()"> 
+</body>
+
+</html>

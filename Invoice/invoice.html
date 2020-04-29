@@ -18,7 +18,7 @@
 </style>
 <body onload="timer()">
     <div class="container">
-        <div "col-sm-12">
+        <div class="col-sm-12">
             <div class="container p-3 my-3 bg-dark text-white">
                 <h1>ABC Hotel</h1>
                 <p>Customer Invoice Form:</p>
@@ -38,12 +38,17 @@
                     No. of days stayed: <input type="text" id="dd">
                     No. of nights stayed: <input type="text" id="nn"> <br>
                 </p>
-                <button type="button" class="btn btn-primary">Print Bill</button>
+                <button type="button" onclick="AssignValues()" class="btn btn-primary">Print Bill</button>
+                <button type="button" onclick="ClearStorage()" class="btn btn-primary">Clear All</button>
+
             </div>
 
                 
         </div>
     </div>
+
+
+    
 </body>
 </html>
 
@@ -57,4 +62,21 @@
         document.getElementById("time").innerHTML = "System Date & Time:     "+ d;
         setTimeout(timer, 500)
     }
+
+    function AssignValues() {
+            localStorage.setItem("cId", document.getElementById("cID").value); //customerID
+            localStorage.setItem("invoiceID", document.getElementById("invoiceID").value); //InvoiceID
+            localStorage.setItem("name", document.getElementById("name").value); //customer name
+            localStorage.setItem("address", document.getElementById("address").value); //customer address
+            localStorage.setItem("contact", document.getElementById("contact").value); //customer contact
+            localStorage.setItem("dd", document.getElementById("dd").value); //customer contact
+            localStorage.setItem("nn", document.getElementById("nn").value); //customer contact
+        }
+
+        function ClearStorage() {
+            localStorage.clear();
+            alert("No of items in local storage is " + localStorage.length);
+        }
+
+
 </script>
