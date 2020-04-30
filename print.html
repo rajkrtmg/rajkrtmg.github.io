@@ -12,7 +12,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <title>Bill</title>
+
 </head>
+
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 <style>
 *{
@@ -29,7 +31,7 @@
 </style>
 
 </head>
-<body>
+<body onload="customerDetails()">
 
     <div class="container">
         <button onclick="javascript:window.print()">Print</button>
@@ -45,11 +47,9 @@
             </div>
             <div class="col-sm-6" style="text-align: right;">
                 <h2 class="font-weight-bold"> INVOICE </h2>    
-                <h4>
-                    Date: <br>
-                    Invoice No: <br>
-                    Customer ID: <br>
-                </h4>
+                <div> <span id="dateD"></span>Date:</div>
+                <div> <span id="invoiceIDD">Invoice ID:</span></div>
+                <div> <span id="cIDD">Customer ID:</span></div>
             </div>
           </div>
     </div>
@@ -57,9 +57,9 @@
     <div class="container">
         <p id="bill" class="font-weight-bold">BILL TO</p>
         <div class="m1-2">
-            <div id="nameD">Name:</div>
-            <div id="addressD">Address:</div>
-            <div id="contactD">Contact No:</div>
+            <div >Name:<span id="nameD"></span></div>
+            <div >Address:<span id="addressD"></span></div>
+            <div >Contact No: <span id="contactD"></span></div>
         </div>
 
         <table style="float:right;" class="table table-striped">
@@ -70,6 +70,7 @@
                     <th style="text-align: right; background-color: cadetblue;">Amount</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <td>Service Charge</td>
@@ -78,6 +79,10 @@
                 </tr>
             </tbody>
         </table>
+
+
+
+
 
         <div class="row">;
            <div class="col">; 
@@ -114,13 +119,18 @@
             <p>Amount in words: Two Hundred Forty Nine Rupees.</p>
         </div>
     </div>
-        
 </body>
 </html>
 
 <script>
-    function insertCustomerDetails() {
-    
-    docu("nameD", "Name : ", localStorage.getItem("name"), "");
-}
+    function customerDetails(){
+        document.getElementById("dateD").innerHTML= " " + localStorage.getItem("date");
+        document.getElementById("invoiceIDD").innerHTML= " " + localStorage.getItem("invoiceID");
+        document.getElementById("cIDD").innerHTML= " " + localStorage.getItem("cID");
+
+        document.getElementById("nameD").innerHTML= " " + localStorage.getItem("name");
+        document.getElementById("addressD").innerHTML= " " + localStorage.getItem("address");
+        document.getElementById("contactD").innerHTML= " " + localStorage.getItem("contact");
+
+    }
 </script>
