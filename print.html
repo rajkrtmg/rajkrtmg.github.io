@@ -31,13 +31,13 @@
 </style>
 
 </head>
-<body onload="customerDetails()">
+<body onload="customerDetails(); data()">
 
     <div class="container">
         <button onclick="javascript:window.print()">Print</button>
         <div class="row">
             <div class="col-sm-6">
-                <h2 class="font-weight-bold">ABC Hotel</h2>
+                <h2 class="font-weight-bold">ABC Hostel</h2>
                 <h4>
                     Province-1, Jhapa, Nepal <br>
                     Phone No: 023-550632 <br>
@@ -47,7 +47,7 @@
             </div>
             <div class="col-sm-6" style="text-align: right;">
                 <h2 class="font-weight-bold"> INVOICE </h2>    
-                <div> Date:<span id="dateD"></span></div>
+                <div> Date:<span id="mitiD"></span></div>
                 <div> Invoice ID:<span id="invoiceIDD"> </span></div>
                 <div> Customer ID:<span id="cIDD"></span></div>
             </div>
@@ -66,8 +66,8 @@
         <table style="float:right;" class="table table-striped">
             <thead>
                 <tr>
-                    <th style="background-color: cadetblue;" width="70%">Description (Number of days & nights stayed)</th>
-                    <th style="background-color: cadetblue;" width="10%">Tax ID</th>
+                    <th style="background-color: cadetblue;" width="50%">Description (Number of days & nights stayed)</th>
+                    <th style="background-color: cadetblue;" width="30%">No. of days & nights stayed</th>
                     <th style="text-align: right; background-color: cadetblue;">Amount</th>
                 </tr>
             </thead>
@@ -75,8 +75,8 @@
             <tbody>
                 <tr>
                     <td>Service Charge</td>
-                    <td>0001</td>
-                    <td style="text-align: right;">200</td>
+                    <td id="daysD">######</td>
+                    <td style="text-align: right;" id="amountD">0</td>
                 </tr>
             </tbody>
         </table>
@@ -84,30 +84,30 @@
 
 
 
-
+       
         <div class="row">;
            <div class="col">; 
                 <table class="table-sm " style="float:right;" id="tableTotal">;
                     <tbody>
                         <tr>
                             <td><b>Sub-total : </b></td>
-                            <td>Rs.<span id="subTotal">200</span></td>
+                            <td>Rs.<span id="subTotal">0</span></td>
                         </tr>
                         <tr>
 
                             <td><b>Service Charge (10%) : </b> </td>
-                            <td>Rs.<span id="serviceCharge">20</span></td>
+                            <td>Rs.<span id="serviceCharge">0</span></td>
                         </tr>
                         <tr>
 
                             <td><b>VAT (13%) : </b></td>
-                            <td>Rs.<span id="vat">28.6</span></td>
+                            <td>Rs.<span id="vat">0</span></td>
                         </tr>
 
                         <tr style="border-top: 1px solid black;">
 
                             <td><b>Total : </b></td>
-                            <td>Rs.<span id="total">248.6</span></td>
+                            <td>Rs.<span id="total">0</span></td>
                         </tr>
                     </tbody>
 
@@ -119,7 +119,8 @@
         <div>
             <p>Amount in words: Two Hundred Forty Nine Rupees.</p>
         </div>
-
+         
+         
         <div class="jumbotron text-center" style="margin-bottom:0">
             <p>Thank u for your Visit..</p>
           </div>
@@ -131,13 +132,24 @@
 
 <script>
     function customerDetails(){
-        document.getElementById("dateD").innerHTML= " " + localStorage.getItem("date");
+        document.getElementById("mitiD").innerHTML= " " + localStorage.getItem("miti");
         document.getElementById("invoiceIDD").innerHTML= " " + localStorage.getItem("invoiceID");
         document.getElementById("cIDD").innerHTML= " " + localStorage.getItem("cID");
 
         document.getElementById("nameD").innerHTML= " " + localStorage.getItem("name");
         document.getElementById("addressD").innerHTML= " " + localStorage.getItem("address");
         document.getElementById("contactD").innerHTML= " " + localStorage.getItem("contact");
+        document.getElementById("amountD").innerHTML= " " + localStorage.getItem("total");
+        document.getElementById("daysD").innerHTML= " " + localStorage.getItem("dd") + " " + "Days" + " " + localStorage.getItem("nn") + " " + "Nights";
+
+    }
+
+    function data(){
+        var dd=localStorage.getItem("dd");
+        var nn=localStorage.getItem("nn");
+        var dn=(dd+nn);
+
+        document.getElementById("amountD").innerHTML = dn;
 
     }
 </script>

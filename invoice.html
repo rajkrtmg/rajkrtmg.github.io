@@ -20,12 +20,13 @@
     <div class="container">
         <div class="col-sm-12">
             <div class="container p-3 my-3 bg-dark text-white">
-                <h1>ABC Hotel</h1>
+                <h1>ABC Hostel</h1>
                 <p>Customer Invoice Form:</p>
                 <p id="time"></p>
             </div>
             
             <div style="padding-top: 7px;" class="form-inline">
+                Date:<input type="date" class="form-control" id="miti">
                 Customer ID:<input type="text" class="form-control" id="cID" placeholder="Customer ID">
                 Invoice Number:<input type="text" class="form-control" id="invoiceID" placeholder="Invoice Number">
             </div>
@@ -36,7 +37,7 @@
                 Phone Number:<input type="text" class="form-control" id="contact" placeholder="Contact Number">
                 <p style="padding-top: 5px;">
                     No. of days stayed: <input type="text" id="dd">
-                    No. of nights stayed: <input type="text" id="nn"> <br>
+                    No. of nights stayed: <input type="text" id="nn">
                 </p>
                 <button type="button" onclick="AssignValues()" class="btn btn-primary">Save</button>
                 <button type="button" onclick="ClearStorage()" class="btn btn-primary">Clear All</button>
@@ -60,24 +61,28 @@
         var h = d.getHours()
         var m = d.getMinutes()
         var s = d.getSeconds();
-        document.getElementById("time").innerHTML = "System Date & Time:     "+ d;
+        document.getElementById("time").innerHTML = "System Date & Time:"+ d;
         setTimeout(timer, 500)
     }
 
     function AssignValues() {
+            localStorage.setItem("miti", document.getElementById("miti").value); //date
             localStorage.setItem("cID", document.getElementById("cID").value); //customerID
             localStorage.setItem("invoiceID", document.getElementById("invoiceID").value); //InvoiceID
             localStorage.setItem("name", document.getElementById("name").value); //customer name
             localStorage.setItem("address", document.getElementById("address").value); //customer address
             localStorage.setItem("contact", document.getElementById("contact").value); //customer contact
-            localStorage.setItem("dd", document.getElementById("dd").value); //customer contact
-            localStorage.setItem("nn", document.getElementById("nn").value); //customer contact
+            localStorage.setItem("dd", document.getElementById("dd").value); //No of days stayed
+            localStorage.setItem("nn", document.getElementById("nn").value); //No of nights stayed
+            localStorage.setItem("total", document.getElementById("totalD").value); //Total bill
+
         }
 
         function ClearStorage() {
             localStorage.clear();
             alert("No of items in local storage is " + localStorage.length);
         }
+
 
 
 </script>

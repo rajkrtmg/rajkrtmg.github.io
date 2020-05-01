@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body">
+    <input type="text" id="ddd">
+    <input type="text" id="nnn">
+    <button type="button" onclick="AssignValues()" class="btn btn-primary">Save</button>
+    <button type="button" onclick="ClearStorage()" class="btn btn-primary">Clear All</button>
+
+
+</body>
+</html>
+
+<script>
+        function AssignValues() {
+            localStorage.setItem("ddd", document.getElementById("ddd").value); //date
+            localStorage.setItem("nnn", document.getElementById("nnn").value); //date
+
+            function ClearStorage() {
+            localStorage.clear();
+            alert("No of items in local storage is " + localStorage.length);
+        }
+</script>
