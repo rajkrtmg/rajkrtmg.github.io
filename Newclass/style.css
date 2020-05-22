@@ -1,0 +1,9 @@
+.text-color{
+    color:tomato;
+    background: wheat;
+}
+
+#error-color{
+    color: red;
+    background: yellowgreen;
+}
