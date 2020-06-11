@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>Bill</title>
+
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+<style>
+*{
+    font-family: 'Comic Neue', cursive;
+}
+
+#bill {
+    margin-top: 40px;
+    background-color: blue;
+    width: 20%;
+    color: white;
+    
+}
+</style>
+
+</head>
+<body">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="font-weight-bold">ABC Hardware</h2>
+                <h4>
+                    Province-1, Jhapa, Nepal <br>
+                    Phone No: 023-550632 <br>
+                    Fax No: 023.550640 <br>
+                    website: rajkrtmg.github.io
+                </h4>
+            </div>
+            <div class="col-sm-6" style="text-align: right;">
+                <h2 class="font-weight-bold"> INVOICE </h2>    
+                <div> Date:<span id="mitiD"></span></div>
+                <div> Invoice ID:<span id="invoiceIDD"> </span></div>
+                <div> Customer ID:<span id="cIDD"></span></div>
+            </div>
+          </div>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    </div>
+    
+    <div class="container">
+        <p id="bill" class="font-weight-bold">BILL TO</p>
+        <div class="m1-2">
+            <div >Name:<span id="nameD"></span></div>
+            <div >Address:<span id="addressD"></span></div>
+            <div >Contact No: <span id="contactD"></span></div>
+        </div>
+
+        <table style="float:right;" class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color: cadetblue;" width="50%">Description (Number of days & nights stayed)</th>
+                    <th style="background-color: cadetblue;" width="30%">No. of days & nights stayed</th>
+                    <th style="text-align: right; background-color: cadetblue;">Amount</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Service Charge</td>
+                    <td id="daysD">######</td>
+                    <td style="text-align: right;" id="amountD">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+       
+        <div class="row">;
+           <div class="col">; 
+                <table class="table-sm " style="float:right;" id="tableTotal">;
+                    <tbody>
+                        <tr>
+                            <td><b>Sub-total : </b></td>
+                            <td>Rs.<span id="subTotal">0</span></td>
+                        </tr>
+                        <tr>
+
+                            <td><b>Service Charge (10%) : </b> </td>
+                            <td>Rs.<span id="serviceCharge">0</span></td>
+                        </tr>
+                        <tr>
+
+                            <td><b>VAT (13%) : </b></td>
+                            <td>Rs.<span id="vat">0</span></td>
+                        </tr>
+
+                        <tr style="border-top: 1px solid black;">
+
+                            <td><b>Total : </b></td>
+                            <td>Rs.<span id="total">0</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+        <div>
+            <p>Amount in words: Two Hundred Forty Nine Rupees.</p>
+        </div>
+         
+         
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>Thank u for your Visit..</p>
+          </div>
+        
+
+    </div>
+</body>
+</html>
+

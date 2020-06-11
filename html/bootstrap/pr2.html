@@ -18,7 +18,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             font-family: 'Ubuntu', sans-serif;
         }
 
@@ -30,8 +30,10 @@
 </head>
 
 <body>
+    
+    <!-- Navigation bar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">ABC Hotel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +45,10 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -57,6 +56,9 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -71,34 +73,46 @@
         <div class="jumbotron text-left">
             <div class="container">
                 <h1>ABC Hotel</h1>
-                <p>Services u can feel....! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum qui possimus enim. Ipsum quam possimus quos rem. Omnis fugiat, neque consequuntur eligendi recusandae voluptatibus cumque maiores, aperiam rem dolorum impedit eveniet. Perspiciatis quisquam adipisci voluptate ex dicta aliquam obcaecati porro!</p>
+                <p>Services u can feel....! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum qui possimus
+                    enim. Ipsum quam possimus quos rem. Omnis fugiat, neque consequuntur eligendi recusandae
+                    voluptatibus cumque maiores, aperiam rem dolorum impedit eveniet. Perspiciatis quisquam adipisci
+                    voluptate ex dicta aliquam obcaecati porro!</p>
                 <button type="button" class="btn btn-primary">Learn More >></button>
             </div>
         </div>
 
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <h2>Heading</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo veritatis laudantium pariatur, dolor ducimus, tempora ipsam laboriosam fugiat cum hic aliquid id sunt, sit et! Voluptatem reprehenderit molestiae nesciunt.</p>
-                  <button type="button" class="btn btn-secondary">View details >></button>
-              </div>
-              <div class="col-md-4">
-                  <h2>Heading</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda id, totam voluptate fugit accusamus vel magni omnis quo, labore ipsum optio quod. Tempora excepturi, saepe quis minima nostrum odit vel velit in!</p>
-                  <button type="button" class="btn btn-secondary">View details >></button>
-              </div>
-              <div class="col-md-4">
-                  <h2>Heading</h2>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, est nulla distinctio at nam repudiandae saepe eum itaque similique, fugiat earum dolor asperiores hic! Corrupti incidunt id vel laboriosam quod ad sequi?</p>
-                  <button type="button" class="btn btn-secondary">View details >></button>
-              </div>
-          </div>
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo veritatis laudantium
+                        pariatur, dolor ducimus, tempora ipsam laboriosam fugiat cum hic aliquid id sunt, sit et!
+                        Voluptatem reprehenderit molestiae nesciunt.</p>
+                    <button type="button" class="btn btn-secondary">View details >></button>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda id, totam voluptate fugit
+                        accusamus vel magni omnis quo, labore ipsum optio quod. Tempora excepturi, saepe quis minima
+                        nostrum odit vel velit in!</p>
+                    <button type="button" class="btn btn-secondary">View details >></button>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, est nulla distinctio at nam
+                        repudiandae saepe eum itaque similique, fugiat earum dolor asperiores hic! Corrupti incidunt id
+                        vel laboriosam quod ad sequi?</p>
+                    <button type="button" class="btn btn-secondary">View details >></button>
+                </div>
+            </div>
+        </div>
     </main>
-    
+
     <footer class="blog-footer container mt-4">
-        <p>Copyright &copy; 2019-2020 Designed by <a href="https://www.facebook.com/jhapaliraju">Raju Tamang</a><a class="float-right" href="#">Back to top</a>
+        <p class="text-left">Copyright &copy; 2019-2020 
+            <span class="float-right">Designed by <a href="https://www.facebook.com/jhapaliraju">Raju Tamang </a>Using Bootstrap 4</span>
+            <!-- <a class="float-right" href="https://www.facebook.com/jhapaliraju">Raju Tamang  <a class="float-right"> Designed by &nbsp; </a></a>  -->
+            <!-- <a class="float-right" href="#">Back to top</a> -->
         </p>
     </footer>
 
