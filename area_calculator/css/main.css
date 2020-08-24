@@ -1,0 +1,30 @@
+:root {
+	--lightBlue: #95b8d1;
+	--mainwhite: #f5f5f5;
+	--mainBlack: #333333;
+}
+
+body {
+	background: var(--lightBlue);
+}
+
+.message-container {
+	background: var(--mainwhite);
+}
+
+.message-content {
+	color: var(--lightBlue);
+}
+
+.max-height {
+	min-height: 100vh;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+#show {
+	display: block;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/11.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row max-height align-items-center">
+            <div class="col-8 mx-auto message-container shadow-lg rounded p-3">
+                <h2 class="text-capitalize mb-3 text-center">land unit conversion</h2>
+
+                <form id="fromFirst">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="number" class="form-control" id="bigha" placeholder="Bigha...."
+                                data-toggle="tooltip" title="Bigha!">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Katha..." id="katha"
+                                data-toggle="tooltip" title="Katha!">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Dhur...." id="dhur"
+                                data-toggle="tooltip" title="Dhur!">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row" id="output1">
+                    <div class="col-md-6">
+                        <div class="card mt-2">
+                            <div class="card-block">
+                                <h5>Total Dhur: <span id="totalDhur"></span> </h5>
+                            </div>
+                            <div class="card-block">
+                                <h5>Bigha-Katha-Dhur: <span id="totalArea"></span> </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mt-2">
+                            <div class="card-block">
+                                <h5>Total Square Feet: <span id="squareFeet"></span> </h5>
+                            </div>
+                            <div class="card-block">
+                                <h5>Total Square Meter: <span id="squareMeter"></span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="formSecond">
+                    <div class="form-row mt-3">
+                        <div class="col">
+                            <input type="number" class="form-control" id="squareMeterInput" data-toggle="tooltip"
+                                title="Square Meters!" placeholder="Square Meters...">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row" id="output2">
+                    <div class="col-md-6">
+                        <div class="card mt-2">
+                            <div class="card-block">
+                                <h5>Bigha-Katha-Dhur: <span id="totalAreaSecond"></span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mt-2">
+                            <div class="card-block">
+                                <h5>Total Square Feet: <span id="squareFeetSecond"></span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script> -->
+
+</html>
