@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: 'Poppins', sans-serif;}
+.grid {display: grid; justify-content: space-between; grid-template-columns: auto auto; gap}
+.container {max-width: 1170px; margin: auto;}
+
+.top{
+	padding: 20px 0px;
+	background-image: url(../img/bg1.png);
+	background-size: cover;
+	height: calc(100vh - 50px);
+}
+
+.header-right{
+	align-items: center;
+}
+
+.header-right-1 i{
+	height: 40px; width: 40px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-right: 15px;
+	color: #fff;
+	text-align: center;
+	line-height: 36px;
+}
+
+.header-right-1 i:hover{
+	background: crimson;
+	border: none;
+	transition-duration: 0.5s;
+}
+
+.btn{
+	padding: 12px 25px;
+    font-size: 13px;
+    background: #d8302f;
+    border-radius: 50px;
+	border: none;
+}
+
+.btn:hover{
+	background: #fff;
+	transition-duration: 0.5s;
+}
+
+.btn a{
+	text-decoration: none;
+	color: #fff;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.btn:hover a{
+	color: #000;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.menu{
+	background: #fff;
+	padding: 10px;
+	margin: 10px 0;
+	align-items: center;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu ul li{
+	display: inline;
+	padding: 0 20px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: #222;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+.menu ul li a:hover{
+	color: #d8302f;
+}
+
+.menu input{
+	padding: 15px 30px;
+	border: 2px solid #d8302f;
+}
+
+.btn1{
+	background: #d8302f;
+	color: #fff;
+	height: 50px; width: 50px;
+	margin-left: -5px;
+	font-size: 22px;
+	border: 0;
+}
+
+.aa{
+	align-items: center;
+}
+
+.headline{
+	height: 50px;
+	background: #032C58;
+	font-size: 10px;
+}
+
+.headline .container h1, .headline .container h1 a{
+	line-height: 50px;
+	color: #fff;
+}
+
+.match{
+	background: url(../img/match-start-img.png) #d8302f;
+	color: #fff;
+	background-size: 50%;
+	height: 300px;
+	background-position: right top;
+	background-repeat: no-repeat
+}
+
+.match-left{
+	padding: 50px;
+}
