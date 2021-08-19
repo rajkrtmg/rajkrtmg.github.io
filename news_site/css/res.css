@@ -1,0 +1,8 @@
+@media(max-width: 780px)
+{
+	.flex{flex-direction: column; text-align: center;}
+	.menu{background: #000; height: 50px;}
+	.fa-bars{display: block; padding: 12px; font-size: 22px}
+	.menu ul li{display: none;}
+	.headline h2{font-size: 25px;}
+}
