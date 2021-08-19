@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background: #f3f3f3;
+}
+
+:root{
+	--primary: #222222;
+	--brand: #f10e34;
+	--w: #fff;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: var(--primary);
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+.flex{
+	display: flex;
+}
+
+.jc{
+	justify-content: space-between;
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+header{
+	background: var(--primary);
+	color: var(--w);
+	height: 115px;
+	padding: 17.8px 0px 20px 0px;
+
+}
+
+.top-menu{
+	text-align: right;
+}
+
+.top-menu ul li{
+	display: inline;
+}
+
+.top-menu ul li a{
+	color: var(--w);
+	padding: 0px 10px;
+	font-size: 12px;
+	border-right: 1px solid var(--w);
+}
+
+.top-menu ul li:last-child a{
+	border: 0;
+	padding-right: 0;
+}
+
+.top-menu ul li a:hover{
+	color: var(--brand);
+}
+
+.top-search{
+	margin: 25px 0;
+}
+
+.search-form input{
+	width: 531px;
+	height: 37px;
+	border-radius: 4px 0 0 4px;
+	border: 0;
+	padding-left: 20px;
+}
+
+.search-form button{
+	width: 54px;
+	height: 37px;
+	border-radius: 0 4px 4px 0;
+	border: 0;
+	background: var(--brand);
+	color: var(--w);
+}
+
+.cart{
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	background: var(--brand);
+	margin-left: 40px;
+	text-align: center;
+	line-height: 37px;
+}
+
+.sum{
+	text-align: center;
+	font-size: 12px;
+	margin: 2px 0 0 5px;
+}
+
+.nav-top{
+	height: 51px;
+	background: var(--brand);
+	color: var(--w);
+	text-transform: uppercase;
+	padding: 15px 0;
+}
+
+.nav-left{
+	flex-basis: 300px;
+}
+
+.nav-left div{
+	padding: 0 15px;
+}
+
+.nav-right{
+	flex-basis: 835px;
+	margin-left: 40px;
+}
+
+.nav-right ul li{
+	display: inline;
+	padding-right: 35px;
+} 
+
+.slider-left{
+	flex-basis: 300px;
+	background: var(--w);
+	height: 432px;
+	/* overflow: auto; */
+	overflow: hidden;
+}
+
+.slider-right{
+	flex-basis: 835px;
+	margin-left: 40px;
+	background: var(--w);
+}
+
+.slider-right-top{
+	position: relative;
+}
+
+.slider-right-top h3{
+	position: absolute;
+	top: 79px;
+	left: 100px;
+	color: #303a7a;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 32px;
+	text-shadow: 0px 2px 4px var(--primary);
+}
+
+.slider-right-top h2{
+	position: absolute;
+	top: 116px;
+	left: 47px;
+	color: var(--w);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 59px;
+	text-shadow: 0px 5px 10px var(--primary);
+}
+
+.slider-right-top h4{
+	position: absolute;
+	top: 189px;
+	left: 120px;
+	color: var(--w);
+	text-transform: uppercase;
+	font-size: 30px;
+	text-shadow: 0px 5px 10px var(--primary);
+}
+
+.slider-right-top h5{
+	position: absolute;
+	top: 255px;
+	left: 173px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 8px 15px;
+	border: 2px solid #000;
+}
+
+
+.slider-left ul li{
+	padding: 14px;
+	border-bottom: 1px solid var(--primary);
+}
+
+.slider-left ul li:last-child{
+	border: none
+}
+
+.slider-left ul li a:hover{
+	color: var(--brand);
+}
+
+.slider-left ul li a{
+	text-transform: capitalize;
+}
+
+.slider-left ul li::before{
+	content: "\f144";
+	font-family: FontAwesome;
+	padding-right: 15px;
+}
+
+.slider-right-bottom{
+	text-align: center;
+	background: var(--brand);
+	color: var(--w);
+	padding: 15px;
+	line-height: 25px;
+}
+
+.box-f h4{
+	text-transform: uppercase;
+}
+.box-f p{
+	text-transform: capitalize;
+}
+
+.items{
+	margin-top: 32px;
+}
+
+/* .items-left{
+	
+} */
+
+.box1{
+	background: var(--w);
+	width: 300px;
+	/* height: 425px; */
+	padding: 15px;
+	margin: 0px 0px 25px 0;
+}
+
+.items-left h3{
+	margin: -2px 0 10px 0;
+	border-bottom: 1px solid var(--primary);
+	text-transform: uppercase;
+	padding: 14px 0;
+}
+
+.items-right{
+	width: 835px;
+	margin-left: 40px;
+	background: var(--w);
+	/* height: 425px; */
+}
+
+.items-right h3{
+	margin: 10px;
+	border-bottom: 1px solid var(--primary);
+	padding: 14px 0;
+	text-transform: uppercase;
+}
+
+.owl-nav{
+	position: absolute;
+	top: -80px;
+	right: 0;
+	font-size: 24px;
+}
+
+.box1 h4,p{
+	text-align: center;
+}
+
+.box1 p span{
+	text-decoration: line-through;
+}
+
+.rating{
+	text-align: center;
+	color: #ffc808;
+}
+
+.awards{
+	height: 200px;
+	background-color: var(--brand);
+}
+
+.aw-img img{
+	height: 150px;
+	width: 150px;
+}
