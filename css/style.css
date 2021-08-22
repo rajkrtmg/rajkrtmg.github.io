@@ -5,10 +5,10 @@ body {
 }
 
 .container {
-	height: 400px;
-	width: 600px;
+	/* height: 300px; */
+	/* width: 300px; */
 	margin: auto;
-	background: #eee;
+	/* background: #eee; */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -16,6 +16,13 @@ body {
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	padding: 20px;
+}
+
+.page{
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 .pr {
@@ -26,6 +33,8 @@ body {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 400;
+	border-radius: 8px;
+	margin: 10px;
 }
 
 a {
